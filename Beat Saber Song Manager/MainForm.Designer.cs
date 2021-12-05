@@ -52,7 +52,7 @@
             this.Btn_PopulateListing.Name = "Btn_PopulateListing";
             this.Btn_PopulateListing.Size = new System.Drawing.Size(110, 23);
             this.Btn_PopulateListing.TabIndex = 1;
-            this.Btn_PopulateListing.Text = "Sus button";
+            this.Btn_PopulateListing.Text = "Populate";
             this.Btn_PopulateListing.UseVisualStyleBackColor = true;
             this.Btn_PopulateListing.Click += new System.EventHandler(this.button1_Click);
             // 
