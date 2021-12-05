@@ -15,6 +15,13 @@ namespace Beat_Saber_Song_Manager
         {
             //FlowLayout_DetectedLibrary.Controls.Add(new SongBox());
             string searchDirectory = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Beat Saber\\Beat Saber_Data\\CustomLevels";
+            FolderBrowserDialog t_folderSelection = new FolderBrowserDialog();
+            t_folderSelection.Description = "Select Beat Saber Install Directory";
+            if(DialogResult.OK == t_folderSelection.ShowDialog())
+            {
+
+                searchDirectory = t_folderSelection.SelectedPath + "\\Beat Saber_Data\\CustomLevels";
+            }
             string[] songs = Directory.GetDirectories(searchDirectory);
             foreach (string s in songs)
             {
